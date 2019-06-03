@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="KGk-i7-Jjw" customClass="SchoolTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="550" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqh-3d-Rv7">
+                        <rect key="frame" x="20" y="11" width="510" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="eVZ-Gc-Bnw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City, State, Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-KD-L2A">
+                        <rect key="frame" x="20" y="69" width="510" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3HF-eT-W6i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borough" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUv-aP-sHZ">
+                        <rect key="frame" x="20" y="98" width="510" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Vrm-en-tSy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLP-TV-ny8">
+                        <rect key="frame" x="20" y="40" width="510" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Jaq-Ng-r4G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VLP-TV-ny8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2Np-rF-WdA"/>
+                    <constraint firstItem="VLP-TV-ny8" firstAttribute="top" secondItem="Cqh-3d-Rv7" secondAttribute="bottom" constant="8" id="3sr-v0-Za0"/>
+                    <constraint firstItem="oIA-KD-L2A" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Aqa-53-fTW"/>
+                    <constraint firstItem="VLP-TV-ny8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="J4J-XG-dlI"/>
+                    <constraint firstItem="oIA-KD-L2A" firstAttribute="top" secondItem="VLP-TV-ny8" secondAttribute="bottom" constant="8" id="K4H-Gs-oF5"/>
+                    <constraint firstItem="Cqh-3d-Rv7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="M7A-Qd-ApB"/>
+                    <constraint firstItem="oIA-KD-L2A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ieE-Av-CD8"/>
+                    <constraint firstItem="Cqh-3d-Rv7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="s1K-ld-oAU"/>
+                    <constraint firstItem="cUv-aP-sHZ" firstAttribute="top" secondItem="oIA-KD-L2A" secondAttribute="bottom" constant="8" id="weq-ej-Tef"/>
+                    <constraint firstItem="cUv-aP-sHZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="x4C-uP-GnA"/>
+                    <constraint firstItem="cUv-aP-sHZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="z8w-t7-BTS"/>
+                    <constraint firstItem="Cqh-3d-Rv7" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zAW-7m-avG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="addressLabel" destination="VLP-TV-ny8" id="pCy-sT-Ya9"/>
+                <outlet property="boroughLabel" destination="cUv-aP-sHZ" id="Oe0-ox-GBQ"/>
+                <outlet property="cityStZipLabel" destination="oIA-KD-L2A" id="QpE-8Y-1be"/>
+                <outlet property="schoolLabel" destination="Cqh-3d-Rv7" id="TPz-AE-iP0"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="93"/>
+        </tableViewCell>
+    </objects>
+</document>
